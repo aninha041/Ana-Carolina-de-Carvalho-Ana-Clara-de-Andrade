@@ -14,8 +14,10 @@ img {
     display: block;
 }
 
+/* HEADER */
+
 header {
-    height: 64px;
+    height: 70px;
     padding: 0 6%;
     background: #1a3a1f;
     display: flex;
@@ -26,36 +28,43 @@ header {
     width: 100%;
     z-index: 10;
 }
-.logo img {
-    width: 45px;
+
+header img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
 }
 
-nav {
+header div {
     display: flex;
     gap: 30px;
 }
 
-nav a {
+header a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
+header a:hover {
     color: #b8e06e;
 }
 
+/* INÍCIO */
+
 #inicio {
-    margin-top: 64px;
+    margin-top: 70px;
     height: 540px;
     padding: 80px 6%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    background: linear-gradient(#0008, #0008),
-    url("https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=1400&q=80")
-    center/cover;
+
+    background:
+        linear-gradient(#0008, #0008),
+        url("https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=1400&q=80")
+        center/cover;
 }
 
 #inicio h1 {
@@ -77,8 +86,13 @@ nav a:hover {
     width: max-content;
 }
 
-#sobre,
-#contato {
+#inicio a:hover {
+    background: #4a8c2a;
+}
+
+/* SOBRE */
+
+#sobre {
     padding: 80px 6%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,6 +114,8 @@ h2 {
     height: 300px;
     object-fit: cover;
 }
+
+/* TECNOLOGIA */
 
 #tecnologia {
     padding: 80px 6%;
@@ -135,7 +151,10 @@ h2 {
     line-height: 1.5;
 }
 
+/* CONTATO */
+
 #contato {
+    padding: 80px 6%;
     background: #f5f5f0;
 }
 
@@ -143,11 +162,17 @@ h2 {
     margin: 15px 0;
 }
 
+/* RODAPÉ */
+
 footer {
     padding: 30px 6%;
     background: #1a3a1f;
     color: white;
     text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 10px;
 }
 
 footer p {
@@ -164,24 +189,34 @@ footer a:hover {
     color: #b8e06e;
 }
 
+/* CELULAR */
+
 @media (max-width: 800px) {
-    #sobre,
-    #contato,
+
+    #sobre {
+        grid-template-columns: 1fr;
+    }
+
     .cards {
         grid-template-columns: 1fr;
     }
 
-    nav {
+    header div {
         gap: 15px;
     }
 }
 
 @media (max-width: 500px) {
-    nav {
+
+    header div {
         display: none;
     }
 
     #inicio h1 {
         font-size: 40px;
+    }
+
+    #inicio p {
+        font-size: 17px;
     }
 }
