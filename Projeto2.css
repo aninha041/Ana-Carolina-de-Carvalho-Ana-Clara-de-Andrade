@@ -27,9 +27,7 @@ header {
     z-index: 10;
 }
 .logo img {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
+    width: 45px;
 }
 
 nav {
