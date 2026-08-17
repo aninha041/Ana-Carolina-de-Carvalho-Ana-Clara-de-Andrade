@@ -55,7 +55,7 @@ header a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: #c8e376;
 
     background:
         linear-gradient(#0008, #0008),
