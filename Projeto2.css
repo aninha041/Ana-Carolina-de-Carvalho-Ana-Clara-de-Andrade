@@ -5,111 +5,185 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f4;
-    color: #2c3e50;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cbe395;
+    color: #233703;
 }
 
-/* Cabeçalho */
-.header-principal {
+/* Header */
+.cabecalho {
+    background-color: #7b9928;
+    padding: 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    height: 70px;
     background-color: #ffffff;
-    padding: 40px 20px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.header-texto {
     text-align: center;
-    border-bottom: 3px solid #2d6a4f;
 }
 
-.titulo-principal {
-    font-size: 2.5rem;
-    color: #1b4332;
-    margin-bottom: 10px;
+.header-texto h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
-.subtitulo-principal {
-    font-size: 1.2rem;
-    color: #2d6a4f;
-    font-weight: 600;
+.subtitulo {
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .tagline {
-    font-size: 1rem;
-    color: #52b788;
-    margin-top: 5px;
+    font-size: 0.95rem;
 }
 
-/* Seções */
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+/* Menu Navegação */
+.menu-navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu-navegacao p {
+    background-color: #557212;
+    color: #ffffff;
+    padding: 8px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Banner Hero */
+.banner-hero {
+    width: 100%;
+}
+
+.imagem-hero {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Seção Sobre Nós */
+.secao-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    gap: 40px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 1.05rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Seção Tecnologia no Campo */
+.secao-tecnologia {
+    padding: 30px 5% 60px 5%;
     text-align: center;
 }
 
-h2 {
-    font-size: 1.8rem;
-    color: #1b4332;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+.secao-tecnologia h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 40px;
 }
 
-.imagem-conteudo {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* Cards */
-.container-cards {
+.cards-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .card-item {
-    background-color: #ffffff;
-    border: 1px solid #d8f3dc;
-    border-radius: 8px;
-    padding: 20px;
     flex: 1;
-    min-width: 260px;
     max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin: 0 auto;
 }
 
-.imagem-card {
-    width: 100%;
-    height: 180px;
+.imagem-redonda {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.card-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
-h3 {
-    font-size: 1.2rem;
-    color: #2d6a4f;
-    margin-bottom: 10px;
+.card-item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.4;
 }
 
 /* Rodapé */
-.rodape-contato {
-    background-color: #081c15;
-    color: #d8f3dc;
-    padding: 30px 20px;
-    text-align: center;
-    margin-top: 40px;
+.rodape {
+    background-color: #3b5003;
+    color: #ffffff;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.rodape-contato h4 {
-    font-size: 1.3rem;
-    color: #b7e4c7;
-    margin-bottom: 15px;
+.rodape-esquerda h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-.rodape-contato p {
-    margin-bottom: 8px;
+.rodape-esquerda p {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.rodape-direita {
+    text-align: right;
+}
+
+.rodape-direita h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.rodape-direita p {
+    font-size: 1rem;
 }
