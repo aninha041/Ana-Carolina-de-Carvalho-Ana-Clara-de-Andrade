@@ -1,220 +1,126 @@
+/* ==========================================================================
+   Configurações Gerais e Reset Básico
+   ========================================================================== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1f2a10;
-  line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f4;
+    color: #2c3e50;
+    line-height: 1.6;
 }
 
-section {
-  padding: 50px 20px;
+/* ==========================================================================
+   Cabeçalho (Header)
+   ========================================================================== */
+.header-principal {
+    background-color: #1b4332;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid #2d6a4f;
 }
 
-h1, h2, h3 {
-  margin-bottom: 15px;
+.titulo-principal {
+    font-size: 2.8rem;
+    color: #d8f3dc;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
-/* Cabeçalho */
-
-header {
-  background-color: #4b5d1e;
-  color: white;
-  text-align: center;
-  padding: 25px 20px 15px;
+.subtitulo-principal {
+    font-size: 1.2rem;
+    color: #b7e4c7;
+    font-weight: 300;
 }
 
-.logo {
-  background-color: white;
-  color: #2f6d1f;
-  width: 90px;
-  height: 90px;
-  border-radius: 8px;
-  margin: 0 auto 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
+/* ==========================================================================
+   Seções e Conteúdo
+   ========================================================================== */
+.secao-sobre {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-header h1 {
-  font-size: 2.5em;
-  letter-spacing: 2px;
+.secao-tecnologia {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-header p {
-  font-size: 1.1em;
-  margin-top: 5px;
+.titulo-secao {
+    font-size: 2rem;
+    color: #1b4332;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
-.subtitulo {
-  font-size: .95em;
-  opacity: .9;
+.texto-sobre {
+    font-size: 1.2rem;
+    color: #40916c;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 500;
 }
 
-/* Menu */
-
-.menu {
-  background-color: #6f8b2a;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px;
+/* ==========================================================================
+   Cards de Serviços / Tecnologias
+   ========================================================================== */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
-.menu div {
-  background-color: #3f5313;
-  color: white;
-  padding: 10px 22px;
-  border-radius: 20px;
-  font-size: .95em;
+.card-item {
+    background-color: #ffffff;
+    border: 1px solid #d8f3dc;
+    border-radius: 8px;
+    padding: 30px 20px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Banner */
-
-.hero {
-  height: 320px;
-  background-image: url("images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.titulo-card {
+    font-size: 1.3rem;
+    color: #2d6a4f;
+    margin-bottom: 15px;
 }
 
-.hero-caixa {
-  background-color: rgba(255, 255, 255, .85);
-  padding: 20px 30px;
-  border-radius: 10px;
+.texto-card {
+    font-size: 1rem;
+    color: #52b788;
 }
 
-.hero-caixa h2 {
-  color: #2f6d1f;
-  font-size: 1.6em;
+/* ==========================================================================
+   Rodapé (Footer)
+   ========================================================================== */
+.rodape-contato {
+    background-color: #081c15;
+    color: #d8f3dc;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
 }
 
-.hero-caixa p {
-  color: #333;
+.titulo-rodape {
+    font-size: 1.4rem;
+    color: #b7e4c7;
+    margin-bottom: 15px;
 }
 
-/* Sobre */
-
-.sobre,
-.tecnologia {
-  background-color: #cfe0a3;
-}
-
-.sobre-container {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-}
-
-.sobre-texto,
-.sobre-imagem {
-  flex: 1 1 300px;
-}
-
-.sobre-texto h2,
-.tecnologia h2 {
-  color: #4f7a1e;
-  font-size: 2em;
-}
-
-.sobre-imagem {
-  height: 220px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.sobre-imagem img,
-.imagem img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Tecnologia */
-
-.tecnologia {
-  text-align: center;
-}
-
-.tecnologia h2 {
-  font-style: italic;
-  margin-bottom: 40px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-
-.card {
-  width: 220px;
-}
-
-.imagem {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  margin: 0 auto 15px;
-  overflow: hidden;
-}
-
-.card h3 {
-  font-size: 1.05em;
-}
-
-.card p {
-  font-weight: bold;
-  font-size: .95em;
-}
-
-/* Rodapé */
-
-footer {
-  background-color: #4b5d1e;
-  color: white;
-  padding: 30px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  text-align: left;
-}
-
-.contato p {
-  font-size: .9em;
-  margin-bottom: 6px;
-}
-
-.marca {
-  text-align: center;
-}
-
-.marca h2 {
-  font-size: 1.6em;
-}
-
-/* Responsivo */
-
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8em;
-  }
-
-  .hero {
-    height: 260px;
-  }
+.item-contato {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #d8f3dc;
 }
