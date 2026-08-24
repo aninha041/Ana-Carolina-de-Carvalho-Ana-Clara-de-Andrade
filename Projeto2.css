@@ -8,6 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #cbe395;
     color: #233703;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -25,7 +26,9 @@ body {
 }
 
 .logo-img {
-    height: 10px;
+    height: 70px;
+    width: auto;
+    object-fit: contain;
     background-color: #ffffff;
     padding: 5px;
     border-radius: 4px;
@@ -73,7 +76,8 @@ body {
 
 .imagem-hero {
     width: 100%;
-    height: auto;
+    max-height: 400px;
+    object-fit: cover;
     display: block;
 }
 
@@ -106,8 +110,10 @@ body {
     flex: 1;
 }
 
-.sobre-imagem img {
+.imagem-conteudo {
     width: 100%;
+    max-height: 300px;
+    object-fit: cover;
     border-radius: 4px;
 }
 
