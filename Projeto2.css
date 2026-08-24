@@ -1,60 +1,115 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGROTECH - Inovação no Campo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <header class="header-principal">
-        <h1 class="titulo-principal">AGROTECH</h1>
-        <p class="subtitulo-principal">Inovação que transforma o futuro com sustentabilidade</p>
-        <p class="tagline">Tecnologia e Inovação no Campo Agrícola</p>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f4;
+    color: #2c3e50;
+    line-height: 1.6;
+}
 
-    <section class="secao-destaque">
-        <h2>O campo do futuro começa hoje</h2>
-        <p>Silos, painéis solares e tecnologia trabalhando juntos pela sustentabilidade.</p>
-    </section>
+/* Cabeçalho */
+.header-principal {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid #2d6a4f;
+}
 
-    <section class="secao-sobre">
-        <h2>SOBRE NÓS</h2>
-        <p>A AGROTECH desenvolve soluções tecnológicas para aumentar a produtividade agrícola de forma sustentável e inteligente.</p>
-        <img src="drone.jpg" alt="Drone sobrevoando a plantação" class="imagem-conteudo">
-    </section>
+.titulo-principal {
+    font-size: 2.5rem;
+    color: #1b4332;
+    margin-bottom: 10px;
+}
 
-    <section class="secao-tecnologia">
-        <h2>TECNOLOGIA NO CAMPO</h2>
+.subtitulo-principal {
+    font-size: 1.2rem;
+    color: #2d6a4f;
+    font-weight: 600;
+}
 
-        <div class="container-cards">
-            <div class="card-item">
-                <img src="sensor.jpg" alt="Sensor de monitoramento de solo" class="imagem-card">
-                <h3>Monitoramento Inteligente</h3>
-                <p>Sensores e dados do solo para decisões mais assertivas.</p>
-            </div>
+.tagline {
+    font-size: 1rem;
+    color: #52b788;
+    margin-top: 5px;
+}
 
-            <div class="card-item">
-                <img src="drone-agricola.jpg" alt="Drone agrícola em operação" class="imagem-card">
-                <h3>Drones Agrícolas</h3>
-                <p>Analisa e acompanha o desenvolvimento das plantações em tempo real.</p>
-            </div>
+/* Seções */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-            <div class="card-item">
-                <img src="irrigacao.jpg" alt="Vista aérea de plantação irrigada" class="imagem-card">
-                <h3>Irrigação Eficiente</h3>
-                <p>Economia de água e maior produtividade para a sua lavoura.</p>
-            </div>
-        </div>
-    </section>
+h2 {
+    font-size: 1.8rem;
+    color: #1b4332;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
 
-    <footer class="rodape-contato">
-        <h4>Contato: AGRO TECH</h4>
-        <p>✉ contato@agrotech.com</p>
-        <p>📞 (41) 99999-9999</p>
-        <p>📍 Curitiba - PR</p>
-    </footer>
+.imagem-conteudo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-</body>
-</html>
+/* Cards */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-item {
+    background-color: #ffffff;
+    border: 1px solid #d8f3dc;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 260px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.imagem-card {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.rodape-contato {
+    background-color: #081c15;
+    color: #d8f3dc;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.rodape-contato h4 {
+    font-size: 1.3rem;
+    color: #b7e4c7;
+    margin-bottom: 15px;
+}
+
+.rodape-contato p {
+    margin-bottom: 8px;
+}
