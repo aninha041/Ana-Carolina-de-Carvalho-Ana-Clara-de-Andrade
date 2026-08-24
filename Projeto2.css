@@ -1,208 +1,214 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #444;
+  font-family: Arial, sans-serif;
+  color: #1f2a10;
+  line-height: 1.5;
 }
 
-img {
-    max-width: 100%;
-    display: block;
+section {
+  padding: 50px 20px;
 }
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
+
+/* Cabeçalho */
 
 header {
-    height: 70px;
-    padding: 0 6%;
-    background: #1a3a1f;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+  background: #4b5d1e;
+  color: white;
+  text-align: center;
+  padding: 25px 20px 15px;
 }
 
-header img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+.logo {
+  background: white;
+  color: #2f6d1f;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
 }
 
-header div {
-    display: flex;
-    gap: 30px;
+header h1 {
+  font-size: 2.5em;
+  letter-spacing: 2px;
 }
 
-header a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+header p {
+  font-size: 1.1em;
 }
 
-header a:hover {
-    color: #b8e06e;
+.subtitulo {
+  font-size: .95em;
+  opacity: .9;
 }
 
-#inicio {
-    margin-top: 70px;
-    height: 540px;
-    padding: 80px 6%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #c8e376;
+/* Menu */
 
-    background:
-        linear-gradient(#0008, #0008),
-        url("https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=1400&q=80")
-        center/cover;
+.menu {
+  background: #6f8b2a;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
 }
 
-#inicio h1 {
-    font-size: 60px;
-    margin-bottom: 15px;
+.menu div {
+  background: #3f5313;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 20px;
 }
 
-#inicio p {
-    font-size: 20px;
-    line-height: 1.5;
+/* Banner */
+
+.hero {
+  height: 320px;
+  background: url("images/hero.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-#inicio a {
-    background: #2d6a2f;
-    color: white;
-    text-decoration: none;
-    padding: 14px 30px;
-    margin-top: 25px;
-    width: max-content;
+.hero-caixa {
+  background: #ffffffdc;
+  padding: 20px 30px;
+  border-radius: 10px;
 }
 
-#inicio a:hover {
-    background: #4a8c2a;
+.hero-caixa h2 {
+  color: #2f6d1f;
 }
 
-#sobre {
-    padding: 80px 6%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
+.hero-caixa p {
+  color: #333;
 }
 
-h2 {
-    color: #1a3a1f;
-    margin-bottom: 20px;
+/* Sobre */
+
+.sobre,
+.tecnologia {
+  background: #cfe0a3;
 }
 
-#sobre p {
-    line-height: 1.7;
+.sobre-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
 }
 
-#sobre img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.sobre-texto,
+.sobre-imagem {
+  flex: 1 1 300px;
 }
 
-#tecnologia {
-    padding: 80px 6%;
-    background: #f5f5f0;
-    text-align: center;
+.sobre-texto h2,
+.tecnologia h2 {
+  color: #4f7a1e;
+  font-size: 2em;
+}
+
+.sobre-imagem {
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.sobre-imagem img,
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tecnologia */
+
+.tecnologia {
+  text-align: center;
+}
+
+.tecnologia h2 {
+  font-style: italic;
+  margin-bottom: 40px;
 }
 
 .cards {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .card {
-    background: white;
-    padding-bottom: 25px;
+  width: 220px;
 }
 
-.card img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
+.imagem {
+  width: 160px;
+  height: 160px;
+  margin: auto auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .card h3 {
-    margin: 20px 10px 10px;
-    color: #1a3a1f;
+  font-size: 1.05em;
 }
 
 .card p {
-    padding: 0 20px;
-    line-height: 1.5;
+  font-weight: bold;
+  font-size: .95em;
 }
 
-#contato {
-    padding: 80px 6%;
-    background: #f5f5f0;
-}
-
-#contato p {
-    margin: 15px 0;
-}
+/* Rodapé */
 
 footer {
-    padding: 30px 6%;
-    background: #1a3a1f;
-    color: white;
-    text-align: center;
+  background: #4b5d1e;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
 }
 
-footer h3 {
-    margin-bottom: 10px;
+.contato p {
+  font-size: .9em;
+  margin-bottom: 6px;
 }
 
-footer p {
-    margin: 8px;
+.marca {
+  text-align: center;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
+.marca h2 {
+  font-size: 1.6em;
 }
 
-footer a:hover {
-    color: #b8e06e;
-}
+/* Responsivo */
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
 
-    #sobre {
-        grid-template-columns: 1fr;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    header div {
-        gap: 15px;
-    }
-}
-
-@media (max-width: 500px) {
-
-    header div {
-        display: none;
-    }
-
-    #inicio h1 {
-        font-size: 40px;
-    }
-
-    #inicio p {
-        font-size: 17px;
-    }
+  .hero {
+    height: 260px;
+  }
 }

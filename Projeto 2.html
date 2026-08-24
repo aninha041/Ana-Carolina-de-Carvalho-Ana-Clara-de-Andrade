@@ -1,167 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AgroTech - Tecnologia e Inovação no Campo</title>
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial;color:#1f2a10;line-height:1.5}
-a{text-decoration:none;color:inherit}
-section{padding:50px 20px}
-h1,h2,h3{margin-bottom:15px}
-
-header{
-  background:#4b5d1e;color:white;text-align:center;padding:25px 20px 15px
-}
-.logo-box{
-  background:white;color:#2f6d1f;width:90px;height:90px;border-radius:8px;
-  margin:auto auto 10px;display:flex;align-items:center;justify-content:center;font-size:40px
-}
-header h1{font-size:2.5em;letter-spacing:2px}
-header p{font-size:1.1em;margin-top:5px}
-.subtitulo{font-size:.95em!important;opacity:.9}
-
-nav{
-  background:#6f8b2a;display:flex;flex-wrap:wrap;justify-content:center;
-  gap:10px;padding:12px
-}
-nav a{
-  background:#3f5313;color:white;padding:10px 22px;border-radius:20px;
-  font-size:.95em
-}
-nav a:hover{background:#2f6d1f}
-
-.hero{
-  height:320px;background:url('images/hero.jpg') center/cover;
-  display:flex;align-items:center;justify-content:center;text-align:center;padding:20px
-}
-.hero-caixa{
-  background:#ffffffe0;padding:20px 30px;border-radius:10px
-}
-.hero-caixa h2{color:#2f6d1f;font-size:1.6em}
-.hero-caixa p{color:#333}
-
-.sobre,.tecnologia{background:#cfe0a3}
-.sobre-container{
-  max-width:1000px;margin:auto;display:flex;flex-wrap:wrap;
-  gap:30px;align-items:center
-}
-.sobre-texto,.sobre-imagem{flex:1 1 300px}
-.sobre-texto h2,.tecnologia h2{color:#4f7a1e;font-size:2em}
-.sobre-imagem{height:220px;border-radius:10px;overflow:hidden}
-.sobre-imagem img,.icon-circle img{
-  width:100%;height:100%;object-fit:cover
-}
-
-.tecnologia{text-align:center}
-.tecnologia h2{font-style:italic;margin-bottom:40px}
-.cards{
-  display:flex;flex-wrap:wrap;justify-content:center;gap:40px
-}
-.card{width:220px}
-.icon-circle{
-  width:160px;height:160px;border-radius:50%;margin:0 auto 15px;overflow:hidden
-}
-.card h3{font-size:1.05em}
-.card p{font-weight:bold;font-size:.95em}
-
-footer{
-  background:#4b5d1e;color:white;padding:30px 20px;
-  display:flex;flex-wrap:wrap;justify-content:center;gap:40px;text-align:left
-}
-footer .contato p{font-size:.9em;margin-bottom:6px}
-.marca{text-align:center}
-.marca h2{font-size:1.6em}
-
-@media(max-width:600px){
-  header h1{font-size:1.8em}
-  .hero{height:260px}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroTech - Tecnologia e Inovação no Campo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <div class="logo-box">🌱</div>
-  <h1>AGROTECH</h1>
-  <p>Inovação que transforma o futuro com sustentabilidade</p>
-  <p class="subtitulo">Tecnologia e Inovação no Campo Agrícola</p>
-</header>
-
-<nav>
-  <a href="#inicio">Início</a>
-  <a href="#sobre">Sobre nós</a>
-  <a href="#tecnologia">Tecnologia</a>
-  <a href="#contato">Contato</a>
-</nav>
-
-<div class="hero" id="inicio">
-  <div class="hero-caixa">
-    <h2>O campo do futuro começa hoje</h2>
-    <p>Silos, painéis solares e tecnologia trabalhando juntos pela sustentabilidade</p>
-  </div>
-</div>
-
-<section class="sobre" id="sobre">
-  <div class="sobre-container">
-    <div class="sobre-texto">
-      <h2>SOBRE NÓS</h2>
-      <p>A AGROTECH desenvolve soluções tecnológicas para aumentar a produtividade agrícola de forma sustentável e inteligente.</p>
-    </div>
-    <div class="sobre-imagem">
-      <img src="images/sobre-drone.jpg" alt="Drone sobre plantação">
-    </div>
-  </div>
-</section>
-
-<section class="tecnologia" id="tecnologia">
-  <h2>tecnologia no campo</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <div class="icon-circle">
-        <img src="images/monitoramento.jpg" alt="Sensor de monitoramento no solo">
-      </div>
-      <h3>Monitoramento inteligente</h3>
-      <p>Sensores e dados do solo para decisões mais assertivas</p>
-    </div>
-
-    <div class="card">
-      <div class="icon-circle">
-        <img src="images/drones.jpg" alt="Drone agrícola sobre a plantação">
-      </div>
-      <h3>Drones Agrícolas</h3>
-      <p>Analisa e acompanha o desenvolvimento das plantações</p>
-    </div>
-
-    <div class="card">
-      <div class="icon-circle">
-        <img src="images/irrigacao.jpg" alt="Vista aérea de plantação irrigada">
-      </div>
-      <h3>Irrigação Eficiente</h3>
-      <p>Economia de água e maior produtividade</p>
-    </div>
-
-  </div>
-</section>
-
-<footer id="contato">
-  <div class="contato">
-    <h3>Contato:</h3>
-    <p>✉ contato@agrotech.com</p>
-    <p>📞 (41) 99999-9999</p>
-    <p>📍 Curitiba - PR</p>
-  </div>
-
-  <div class="marca">
-    <h2>AGRO TECH</h2>
+  <header>
+    <div class="logo">🌱</div>
+    <h1>AGROTECH</h1>
     <p>Inovação que transforma o futuro com sustentabilidade</p>
-  </div>
-</footer>
+    <p class="subtitulo">Tecnologia e Inovação no Campo Agrícola</p>
+  </header>
+
+  <section class="menu">
+    <div>Início</div>
+    <div>Sobre nós</div>
+    <div>Tecnologia</div>
+    <div>Contato</div>
+  </section>
+
+  <section class="hero">
+    <div class="hero-caixa">
+      <h2>O campo do futuro começa hoje</h2>
+      <p>Silos, painéis solares e tecnologia trabalhando juntos pela sustentabilidade</p>
+    </div>
+  </section>
+
+  <section class="sobre">
+    <div class="sobre-container">
+      <div class="sobre-texto">
+        <h2>SOBRE NÓS</h2>
+        <p>A AGROTECH desenvolve soluções tecnológicas para aumentar a produtividade agrícola de forma sustentável e inteligente.</p>
+      </div>
+
+      <div class="sobre-imagem">
+        <img src="images/sobre-drone.jpg" alt="Drone sobre plantação">
+      </div>
+    </div>
+  </section>
+
+  <section class="tecnologia">
+    <h2>tecnologia no campo</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="imagem">
+          <img src="images/monitoramento.jpg" alt="Sensor de monitoramento no solo">
+        </div>
+        <h3>Monitoramento inteligente</h3>
+        <p>Sensores e dados do solo para decisões mais assertivas</p>
+      </div>
+
+      <div class="card">
+        <div class="imagem">
+          <img src="images/drones.jpg" alt="Drone agrícola sobre a plantação">
+        </div>
+        <h3>Drones Agrícolas</h3>
+        <p>Analisa e acompanha o desenvolvimento das plantações</p>
+      </div>
+
+      <div class="card">
+        <div class="imagem">
+          <img src="images/irrigacao.jpg" alt="Vista aérea de plantação irrigada">
+        </div>
+        <h3>Irrigação Eficiente</h3>
+        <p>Economia de água e maior produtividade</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="contato">
+      <h3>Contato:</h3>
+      <p>contato@agrotech.com</p>
+      <p>(41) 99999-9999</p>
+      <p> Curitiba - PR</p>
+    </div>
+
+    <div class="marca">
+      <h2>AGRO TECH</h2>
+      <p>Inovação que transforma o futuro com sustentabilidade</p>
+    </div>
+  </footer>
 
 </body>
 </html>
