@@ -1,109 +1,60 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROTECH - Inovação no Campo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #173a0c;
-    color: #2a7926;
-    line-height: 1.6;
-}
-.header-principal {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-    border-bottom: 2px solid #e2d9f3;
-}
+    <header class="header-principal">
+        <h1 class="titulo-principal">AGROTECH</h1>
+        <p class="subtitulo-principal">Inovação que transforma o futuro com sustentabilidade</p>
+        <p class="tagline">Tecnologia e Inovação no Campo Agrícola</p>
+    </header>
 
-.titulo-principal {
-    font-size: 2.5rem;
-    color: #b4dcc3;
-    margin-bottom: 10px;
-}
+    <section class="secao-destaque">
+        <h2>O campo do futuro começa hoje</h2>
+        <p>Silos, painéis solares e tecnologia trabalhando juntos pela sustentabilidade.</p>
+    </section>
 
-.subtitulo-principal {
-    font-size: 1.2rem;
-    color: #000000;
-}
+    <section class="secao-sobre">
+        <h2>SOBRE NÓS</h2>
+        <p>A AGROTECH desenvolve soluções tecnológicas para aumentar a produtividade agrícola de forma sustentável e inteligente.</p>
+        <img src="drone.jpg" alt="Drone sobrevoando a plantação" class="imagem-conteudo">
+    </section>
 
-.tagline {
-    font-size: 1rem;
-    color: #a855f7;
-    margin-top: 5px;
-}
+    <section class="secao-tecnologia">
+        <h2>TECNOLOGIA NO CAMPO</h2>
 
+        <div class="container-cards">
+            <div class="card-item">
+                <img src="sensor.jpg" alt="Sensor de monitoramento de solo" class="imagem-card">
+                <h3>Monitoramento Inteligente</h3>
+                <p>Sensores e dados do solo para decisões mais assertivas.</p>
+            </div>
 
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
+            <div class="card-item">
+                <img src="drone-agricola.jpg" alt="Drone agrícola em operação" class="imagem-card">
+                <h3>Drones Agrícolas</h3>
+                <p>Analisa e acompanha o desenvolvimento das plantações em tempo real.</p>
+            </div>
 
-h2 {
-    font-size: 1.8rem;
-    color: #6b21a8;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
+            <div class="card-item">
+                <img src="irrigacao.jpg" alt="Vista aérea de plantação irrigada" class="imagem-card">
+                <h3>Irrigação Eficiente</h3>
+                <p>Economia de água e maior produtividade para a sua lavoura.</p>
+            </div>
+        </div>
+    </section>
 
-.imagem-conteudo {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-}
+    <footer class="rodape-contato">
+        <h4>Contato: AGRO TECH</h4>
+        <p>✉ contato@agrotech.com</p>
+        <p>📞 (41) 99999-9999</p>
+        <p>📍 Curitiba - PR</p>
+    </footer>
 
-
-.container-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.card-item {
-    background-color: #ffffff;
-    border: 1px solid #d8b4fe;
-    border-radius: 8px;
-    padding: 20px;
-    flex: 1;
-    min-width: 260px;
-    max-width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.imagem-card {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-h3 {
-    font-size: 1.2rem;
-    color: #7e22ce;
-    margin-bottom: 10px;
-}
-
-.rodape-contato {
-    background-color: #3b0764;
-    color: #f3e8ff;
-    padding: 30px 20px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.rodape-contato h4 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-}
-
-.rodape-contato p {
-    margin-bottom: 8px;
-}
+</body>
+</html>
